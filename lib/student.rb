@@ -82,7 +82,7 @@ class Student
     sql = <<-SQL
       SELECT * FROM students
       WHERE grade = 10
-      ORDER BY sutdents.id
+      ORDER BY students.id
       LIMIT ?
     SQL
 
@@ -90,4 +90,6 @@ class Student
       self.new_from_db(row)
     end
   end
+
+  
 end
