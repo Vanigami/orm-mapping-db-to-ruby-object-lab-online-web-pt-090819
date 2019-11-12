@@ -105,8 +105,8 @@ class Student
   end
 
   def self.all_students_in_grade_X
-    sql = <<-SQL 
-      SELECT * FROM students 
+    sql = <<-SQL
+      SELECT * FROM students
       WHERE GRADE = ?
       ORDER BY students.id
 
