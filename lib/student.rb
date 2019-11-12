@@ -59,7 +59,7 @@ class Student
     sql = <<-SQL
         SELECT COUNT(*)
         FROM students
-        WHERE grade == 9;
+        WHERE grade = 9;
     SQL
   end
 end
